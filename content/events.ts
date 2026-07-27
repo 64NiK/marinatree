@@ -71,8 +71,8 @@ export const events: EventItem[] = [
       ru: "Дневной ретрит на природе: мягкая йога, звуковое купание, творчество и церемониальное какао. Отпусти. Обнови. Открой сердце.",
     },
     intro: {
-      lv: "Diena sev, dabā un sirdī. Klusa vieta ārpus ikdienas steigas, kur atļauties apstāties, atslābināties un no jauna sadzirdēt sevi — trīs sieviešu pavadībā.",
-      ru: "День для себя, на природе и в сердце. Тихое место вдали от ежедневной спешки, где можно остановиться, расслабиться и снова услышать себя — в сопровождении трёх женщин.",
+      lv: "Diena sev, dabā un sirdī. Klusa vieta ārpus ikdienas steigas, kur atļauties apstāties, atslābināties un no jauna sadzirdēt sevi, trīs sieviešu pavadībā.",
+      ru: "День для себя, на природе и в сердце. Тихое место вдали от ежедневной спешки, где можно остановиться, расслабиться и снова услышать себя, в сопровождении трёх женщин.",
     },
     location: {
       lv: "Tukuma novadā · 50 min no Rīgas vai Jelgavas",
@@ -108,8 +108,8 @@ export const events: EventItem[] = [
         name: "Marina",
         role: { lv: "Skaņu terapeite un transformācijas spēles vadītāja", ru: "Звукотерапевт и ведущая трансформационной игры" },
         bio: {
-          lv: "Palīdz sadzirdēt sevi caur skaņas terapiju — kristāla un Tibetas bļodām, gongu — un līdzsvarot enerģiju.",
-          ru: "Помогает услышать себя через звукотерапию — хрустальные и тибетские чаши, гонг — и уравновесить энергию.",
+          lv: "Palīdz sadzirdēt sevi un līdzsvarot enerģiju caur skaņas terapiju ar kristāla un Tibetas bļodām un gongu.",
+          ru: "Помогает услышать себя и уравновесить энергию через звукотерапию хрустальными и тибетскими чашами и гонгом.",
         },
         image: "/photos/events/piknik-marina.jpg",
       },
