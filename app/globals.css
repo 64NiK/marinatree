@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Beige base + earth-green, deep-blue and warm-gold accents — Marina's brand */
+  --color-cream: #faf6ef;
+  --color-sand: #f3ebdd;
+  --color-sand-deep: #e9ddc8;
+  --color-gold: #a5824a;
+  --color-gold-soft: #c2a878;
+  --color-ink: #33302a;
+  --color-ink-soft: #6b6459;
+  --color-night: #22344a;
+  --color-night-soft: #3d5473;
+  --color-forest: #47563f;
+  --color-forest-soft: #7c8a6a;
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-manrope);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-manrope), sans-serif;
+  /* Decorative elements sit with negative offsets; never let them
+     create sideways scroll on narrow phones. */
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-sand-deep);
+}
+
+/* Soft woven-linen texture — sits behind sand-toned sections */
+.linen {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(120, 100, 66, 0.05) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(0deg, rgba(120, 100, 66, 0.05) 0 1px, transparent 1px 4px);
 }
