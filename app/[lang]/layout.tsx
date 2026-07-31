@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { dictionary, hasLang, langs, type Lang } from "@/content/dictionary";
 import { hasWhatsapp, waLink } from "@/content/contact";
-import { Emblem, WhatsAppGlyph } from "../decor";
+import { WhatsAppGlyph } from "../decor";
 import { MobileMenu } from "./mobile-menu";
 import "../globals.css";
 
@@ -58,7 +59,14 @@ export default async function RootLayout({
         <header className="absolute top-0 left-0 right-0 z-20">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
             <Link href={`/${lang}`} className="flex items-center gap-3">
-              <Emblem className="h-10 w-10 shrink-0 text-forest" />
+              <Image
+                src="/logo.jpg"
+                alt="Tree of Life Sound Temple"
+                width={96}
+                height={96}
+                priority
+                className="h-11 w-11 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-gold/30"
+              />
               <span className="flex flex-col leading-none">
                 <span className="font-display text-lg tracking-wide text-ink sm:text-xl">
                   Tree of <span className="italic text-gold">Life</span>
@@ -112,7 +120,14 @@ export default async function RootLayout({
         ) : null}
 
         <footer className="border-t border-sand-deep bg-sand">
-          <div className="mx-auto max-w-6xl px-6 py-10 text-center">
+          <div className="mx-auto max-w-6xl px-6 py-12 text-center">
+            <Image
+              src="/logo.jpg"
+              alt="Tree of Life Sound Temple"
+              width={192}
+              height={192}
+              className="mx-auto mb-7 h-24 w-24 rounded-full object-cover shadow-md ring-1 ring-gold/30"
+            />
             <p className="mx-auto max-w-xl font-display text-lg italic text-ink-soft">
               {t.footer}
             </p>
