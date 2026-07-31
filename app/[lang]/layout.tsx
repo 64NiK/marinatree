@@ -48,6 +48,7 @@ export default async function RootLayout({
     { href: `/${lang}#events`, label: t.nav.events },
     { href: `/${lang}#about`, label: t.nav.about },
     { href: `/${lang}#services`, label: t.nav.services },
+    { href: `/${lang}#bracelets`, label: t.nav.bracelets },
     { href: `/${lang}#contact`, label: t.nav.contact },
   ];
 
@@ -59,8 +60,9 @@ export default async function RootLayout({
             <Link href={`/${lang}`} className="flex items-center gap-3">
               <Emblem className="h-10 w-10 shrink-0 text-forest" />
               <span className="flex flex-col leading-none">
-                <span className="font-display text-xl tracking-wide text-ink">
-                  Marina <span className="italic text-gold">Ķēniņa</span>
+                <span className="font-display text-lg tracking-wide text-ink sm:text-xl">
+                  Tree of <span className="italic text-gold">Life</span>
+                  <span className="ml-1.5 text-sm text-ink-soft">ST, SIA</span>
                 </span>
                 <span className="mt-1 whitespace-nowrap text-[0.6rem] uppercase tracking-[0.2em] text-forest-soft sm:tracking-[0.3em]">
                   {t.tagline}

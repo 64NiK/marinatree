@@ -260,6 +260,39 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
+      {/* Bracelets teaser */}
+      <section id="bracelets" className="linen scroll-mt-20 bg-sand py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <Link href={`/${lang}/bracelets`} className="group block">
+            <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-2">
+              <div className="relative aspect-[16/11] md:aspect-auto">
+                <Image
+                  src="/photos/bracelets/rose-sea.jpg"
+                  alt={t.bracelets.heading}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative flex flex-col justify-center p-8 lg:p-12">
+                <Sprig className="pointer-events-none absolute -right-2 -top-2 hidden h-32 w-20 rotate-[200deg] text-forest opacity-40 lg:block" />
+                <Lotus className="mb-3 h-6 w-10 text-forest" />
+                <h2 className="font-display text-3xl leading-snug text-night sm:text-4xl">
+                  {t.bracelets.heading}
+                </h2>
+                <p className="mt-4 max-w-md leading-relaxed text-ink-soft">{t.bracelets.teaser}</p>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-night transition-colors group-hover:text-gold">
+                  {t.bracelets.more}
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </span>
+              </div>
+            </article>
+          </Link>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contact" className="relative scroll-mt-20 overflow-hidden py-16 lg:py-24">
         <Sprig className="pointer-events-none absolute -left-4 bottom-2 hidden h-44 w-24 rotate-[35deg] text-forest opacity-40 lg:block" />
