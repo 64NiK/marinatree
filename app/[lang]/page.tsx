@@ -37,7 +37,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <SoundCircles className="pointer-events-none absolute left-[38%] top-6 hidden h-44 w-44 text-gold opacity-45 lg:block" />
-        <Sprig className="pointer-events-none absolute -right-11 top-24 h-56 w-28 -scale-x-100 rotate-[8deg] text-forest opacity-30 sm:right-auto sm:-left-20 sm:top-auto sm:bottom-2 sm:h-64 sm:w-40 sm:scale-x-100 sm:rotate-[10deg] sm:opacity-90" />
+        <Sprig className="pointer-events-none absolute -right-16 top-16 h-64 w-32 -scale-x-100 rotate-[14deg] text-forest opacity-30 sm:right-auto sm:-left-20 sm:top-auto sm:bottom-2 sm:h-64 sm:w-40 sm:scale-x-100 sm:rotate-[10deg] sm:opacity-90" />
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-28 sm:pt-32 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
           <div className="relative">
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
