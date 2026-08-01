@@ -53,8 +53,9 @@ export default async function BraceletsPage({
       </div>
 
       {/* Hero */}
-      <section className="relative mx-auto mt-6 grid max-w-6xl items-center gap-10 px-6 lg:grid-cols-[1fr_0.85fr] lg:gap-14">
-        <Sprig className="pointer-events-none absolute -left-4 -top-4 hidden h-40 w-24 rotate-[150deg] text-forest opacity-70 lg:block" />
+      <div className="relative overflow-hidden">
+        <Sprig className="pointer-events-none absolute -left-11 top-4 hidden h-56 w-28 rotate-[8deg] text-forest opacity-60 lg:block" />
+        <section className="mx-auto mt-6 grid max-w-6xl items-center gap-10 px-6 lg:grid-cols-[1fr_0.85fr] lg:gap-14">
         <div className="relative">
           <p className="text-xs uppercase tracking-[0.25em] text-gold">Tree of Life ST</p>
           <h1 className="mt-3 font-display text-4xl leading-tight text-night sm:text-5xl">
@@ -81,7 +82,8 @@ export default async function BraceletsPage({
             className="relative max-h-[68vh] w-full rounded-[1.6rem] object-cover lg:max-h-none"
           />
         </div>
-      </section>
+        </section>
+      </div>
 
       {/* Story */}
       <section className="mx-auto max-w-2xl px-6 py-16 lg:py-20">
