@@ -264,13 +264,13 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <section id="bracelets" className="linen scroll-mt-20 bg-sand py-16 lg:py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Link href={`/${lang}/bracelets`} className="group block">
-            <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-2">
-              <div className="relative aspect-[16/11] md:aspect-auto">
+            <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-[0.5fr_1fr]">
+              <div className="relative aspect-[4/5] md:aspect-[3/4]">
                 <Image
-                  src="/photos/bracelets/handmade.jpg"
+                  src="/photos/bracelets/blue-black.jpg"
                   alt={t.bracelets.heading}
                   fill
-                  sizes="(min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 768px) 34vw, 100vw"
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
