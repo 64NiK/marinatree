@@ -267,7 +267,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-2">
               <div className="relative aspect-[16/11] md:aspect-auto">
                 <Image
-                  src="/photos/bracelets/green.jpg"
+                  src="/photos/bracelets/handmade.jpg"
                   alt={t.bracelets.heading}
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
