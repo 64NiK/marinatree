@@ -58,13 +58,23 @@ export default async function RootLayout({
       <body className="min-h-screen bg-cream text-ink">
         <header className="absolute top-0 left-0 right-0 z-20">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-            <Link href={`/${lang}`} className="flex flex-col leading-none">
-              <span className="font-display text-lg tracking-wide text-ink sm:text-xl">
-                Tree of <span className="italic text-gold">Life</span>
-                <span className="ml-1.5 text-sm text-ink-soft">ST, SIA</span>
-              </span>
-              <span className="mt-1 whitespace-nowrap text-[0.6rem] uppercase tracking-[0.2em] text-forest-soft sm:tracking-[0.3em]">
-                {t.tagline}
+            <Link href={`/${lang}`} className="flex items-center gap-3">
+              <Image
+                src="/logo.jpg"
+                alt="Tree of Life Sound Temple"
+                width={96}
+                height={96}
+                priority
+                className="h-11 w-11 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-gold/30"
+              />
+              <span className="flex flex-col leading-none">
+                <span className="font-display text-lg tracking-wide text-ink sm:text-xl">
+                  Tree of <span className="italic text-gold">Life</span>
+                  <span className="ml-1.5 text-sm text-ink-soft">ST, SIA</span>
+                </span>
+                <span className="mt-1 whitespace-nowrap text-[0.6rem] uppercase tracking-[0.2em] text-forest-soft sm:tracking-[0.3em]">
+                  {t.tagline}
+                </span>
               </span>
             </Link>
             <nav className="flex items-center gap-4 text-sm sm:gap-6">
