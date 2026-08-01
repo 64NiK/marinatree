@@ -267,11 +267,11 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
             <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-2">
               <div className="relative aspect-[16/11] md:aspect-auto">
                 <Image
-                  src="/photos/bracelets/rose-sea.jpg"
+                  src="/photos/bracelets/green.jpg"
                   alt={t.bracelets.heading}
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="relative flex flex-col justify-center p-8 lg:p-12">
