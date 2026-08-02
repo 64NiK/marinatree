@@ -37,7 +37,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <SoundCircles className="pointer-events-none absolute left-[38%] top-6 hidden h-44 w-44 text-gold opacity-45 lg:block" />
-        <Sprig className="pointer-events-none absolute -right-16 top-16 h-64 w-32 -scale-x-100 rotate-[14deg] text-forest opacity-30 sm:right-auto sm:-left-20 sm:top-auto sm:bottom-2 sm:h-64 sm:w-40 sm:scale-x-100 sm:rotate-[10deg] sm:opacity-90" />
+        <Sprig className="pointer-events-none absolute -right-14 top-[20.5rem] h-44 w-28 -scale-x-100 -rotate-[6deg] text-forest opacity-35 sm:right-auto sm:-left-20 sm:top-auto sm:bottom-2 sm:h-64 sm:w-40 sm:scale-x-100 sm:rotate-[10deg] sm:opacity-90" />
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-28 sm:pt-32 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
           <div className="relative">
             <p className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
@@ -211,6 +211,37 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         </div>
       </section>
 
+      {/* Bracelets teaser */}
+      <section id="bracelets" className="scroll-mt-20 py-9 lg:py-14">
+        <div className="mx-auto max-w-4xl px-6">
+          <Link href={`/${lang}/bracelets`} className="group block">
+            <article className="flex overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
+              <Image
+                src="/photos/bracelets/blue-black.jpg"
+                alt={t.bracelets.heading}
+                width={1124}
+                height={1999}
+                sizes="(min-width: 768px) 34vw, 32vw"
+                className="w-[34%] shrink-0 self-center rounded-xl object-contain transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5] md:w-full md:self-stretch md:rounded-none md:object-cover"
+              />
+              <div className="relative flex flex-col justify-center p-5 sm:p-6 lg:p-9">
+                <Sprig className="pointer-events-none absolute -right-2 -top-2 hidden h-28 w-16 rotate-[200deg] text-forest opacity-40 lg:block" />
+                <h2 className="font-display text-xl leading-snug text-night sm:text-3xl">
+                  {t.bracelets.heading}
+                </h2>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft sm:text-base">{t.bracelets.teaser}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-night transition-colors group-hover:text-gold">
+                  {t.bracelets.more}
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </span>
+              </div>
+            </article>
+          </Link>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="linen scroll-mt-20 bg-sand py-16 lg:py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
@@ -257,39 +288,6 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Bracelets teaser */}
-      <section id="bracelets" className="linen scroll-mt-20 bg-sand py-9 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6">
-          <Link href={`/${lang}/bracelets`} className="group block">
-            <article className="grid overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid-cols-[0.42fr_1fr]">
-              <div className="relative aspect-[16/10] md:aspect-[4/5]">
-                <Image
-                  src="/photos/bracelets/blue-black.jpg"
-                  alt={t.bracelets.heading}
-                  fill
-                  sizes="(min-width: 768px) 34vw, 100vw"
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="relative flex flex-col justify-center p-6 lg:p-9">
-                <Sprig className="pointer-events-none absolute -right-2 -top-2 hidden h-28 w-16 rotate-[200deg] text-forest opacity-40 lg:block" />
-                <Lotus className="mb-3 h-5 w-9 text-forest" />
-                <h2 className="font-display text-2xl leading-snug text-night sm:text-3xl">
-                  {t.bracelets.heading}
-                </h2>
-                <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft sm:text-base">{t.bracelets.teaser}</p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-night transition-colors group-hover:text-gold">
-                  {t.bracelets.more}
-                  <span aria-hidden className="transition-transform group-hover:translate-x-1">
-                    →
-                  </span>
-                </span>
-              </div>
-            </article>
-          </Link>
         </div>
       </section>
 

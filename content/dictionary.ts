@@ -70,8 +70,7 @@ export const dictionary = {
     },
     bracelets: {
       heading: "Rokassprādzes pēc Tava nodoma",
-      teaser:
-        "Ar rokām pītas rokassprādzes ar dabīgiem minerāliem, radītas ar mīlestību un tieši Tavam personīgajam nodomam.",
+      teaser: "Ar rokām pītas ar dabīgiem minerāliem un mīlestību.",
       more: "Uzzināt vairāk",
       title: "Rokassprādzes pēc Tava personīgā nodoma",
       lead: "Katru rokassprādzi Marina pin ar rokām, ieliekot tajā sirds siltumu un dabīgus minerālus, kas izvēlēti tieši Tev.",
@@ -164,8 +163,7 @@ export const dictionary = {
     },
     bracelets: {
       heading: "Браслеты под Ваш личный запрос",
-      teaser:
-        "Браслеты ручной работы с натуральными минералами, созданные с любовью под Ваш личный запрос.",
+      teaser: "Ручная работа с натуральными минералами и любовью.",
       more: "Подробнее",
       title: "Браслеты под Ваш личный запрос",
       lead: "Каждый браслет Марина плетёт вручную, вкладывая тепло сердца и натуральные минералы, подобранные именно для Вас.",
