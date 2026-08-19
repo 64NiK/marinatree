@@ -225,14 +225,14 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <section id="candles" className="scroll-mt-20 py-9 lg:py-14">
         <div className="mx-auto max-w-4xl px-6">
           <Link href={`/${lang}/candles`} className="group block">
-            <article className="flex overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
+            <article className="flex flex-col overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
               <Image
                 src={candlePhoto("inner-peace")}
                 alt={t.candles.brand}
                 width={460}
                 height={553}
-                sizes="(min-width: 768px) 34vw, 32vw"
-                className="w-[34%] shrink-0 self-stretch object-cover transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5] md:w-full"
+                sizes="(min-width: 768px) 34vw, 100vw"
+                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5]"
               />
               <div className="relative flex flex-col justify-center p-5 sm:p-6 lg:p-9">
                 <CandleGlyph className="pointer-events-none absolute right-3 top-3 hidden h-16 w-11 text-gold opacity-30 lg:block" />
@@ -262,14 +262,14 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <section id="bracelets" className="scroll-mt-20 py-9 lg:py-14">
         <div className="mx-auto max-w-4xl px-6">
           <Link href={`/${lang}/bracelets`} className="group block">
-            <article className="flex overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
+            <article className="flex flex-col overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
               <Image
                 src="/photos/bracelets/blue-black.jpg"
                 alt={t.bracelets.heading}
                 width={1124}
                 height={1999}
-                sizes="(min-width: 768px) 34vw, 32vw"
-                className="w-[34%] shrink-0 self-stretch object-cover transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5] md:w-full"
+                sizes="(min-width: 768px) 34vw, 100vw"
+                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5]"
               />
               <div className="relative flex flex-col justify-center p-5 sm:p-6 lg:p-9">
                 <Sprig className="pointer-events-none absolute -right-2 -top-2 hidden h-28 w-16 rotate-[200deg] text-forest opacity-40 lg:block" />
