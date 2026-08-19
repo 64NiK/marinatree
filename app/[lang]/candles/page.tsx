@@ -231,6 +231,19 @@ export default async function CandlesPage({ params }: PageProps<"/[lang]/candles
                 </li>
               ))}
             </ul>
+
+            {/* Made-to-order line: its own framed block so the price reads as
+                a distinct offer rather than another bullet. */}
+            <div className="mx-auto mt-8 max-w-sm rounded-2xl border border-sand-deep bg-cream/60 px-6 py-5">
+              <p className="font-display text-xl leading-snug text-night sm:text-2xl">
+                {c.customHeading}
+              </p>
+              <p className="mt-3 text-[0.65rem] uppercase tracking-[0.25em] text-gold">
+                {c.priceLabel}
+              </p>
+              <p className="mt-1 font-display text-2xl text-night">{c.price}</p>
+            </div>
+
             <a
               href={orderHref}
               {...orderProps}

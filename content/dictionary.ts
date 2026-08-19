@@ -125,6 +125,9 @@ export const dictionary = {
       collectionLead: "Piecpadsmit sveces, katra savai sajūtai.",
       scentLabel: "Aromāts",
       crystalLabel: "Kristāls",
+      customHeading: "Sveces ar nodomu",
+      priceLabel: "Cena",
+      price: "14.50€",
       orderHeading: "Kā pasūtīt",
       orderIntro:
         "Ja jūti, kura svece ir Tava, uzraksti man WhatsApp. Pastāstīšu par pieejamību un nogādāšu to Tev.",
@@ -261,6 +264,9 @@ export const dictionary = {
       collectionLead: "Пятнадцать свечей, каждая для своего состояния.",
       scentLabel: "Аромат",
       crystalLabel: "Кристалл",
+      customHeading: "Свечи под индивидуальный запрос",
+      priceLabel: "Стоимость",
+      price: "14.50€",
       orderHeading: "Как заказать",
       orderIntro:
         "Если чувствуете, какая свеча Ваша, напишите мне в WhatsApp. Расскажу о наличии и передам её Вам.",
