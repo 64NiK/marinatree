@@ -9,8 +9,17 @@ import {
   type Lang,
 } from "@/content/dictionary";
 import { events } from "@/content/events";
+import { candlePhoto } from "@/content/candles";
 import { hasWhatsapp, waLink } from "@/content/contact";
-import { Emblem, LeafDivider, Lotus, SoundCircles, Sprig, Waves, WhatsAppGlyph } from "../decor";
+import {
+  CandleGlyph,
+  LeafDivider,
+  Lotus,
+  SoundCircles,
+  Sprig,
+  Waves,
+  WhatsAppGlyph,
+} from "../decor";
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => (
   <div className="mb-10 flex items-center gap-4">
@@ -210,6 +219,44 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           )}
         </div>
       </section>
+
+      {/* Candles teaser: same compact card as the bracelets one below, so the
+          two product lines sit at equal weight on the homepage. */}
+      <section id="candles" className="scroll-mt-20 py-9 lg:py-14">
+        <div className="mx-auto max-w-4xl px-6">
+          <Link href={`/${lang}/candles`} className="group block">
+            <article className="flex overflow-hidden rounded-2xl border border-sand-deep bg-cream transition-shadow hover:shadow-lg hover:shadow-sand-deep/40 md:grid md:grid-cols-[0.42fr_1fr]">
+              <Image
+                src={candlePhoto("inner-peace")}
+                alt={t.candles.brand}
+                width={460}
+                height={553}
+                sizes="(min-width: 768px) 34vw, 32vw"
+                className="w-[34%] shrink-0 self-center object-cover transition-transform duration-500 group-hover:scale-105 md:aspect-[4/5] md:w-full md:self-stretch"
+              />
+              <div className="relative flex flex-col justify-center p-5 sm:p-6 lg:p-9">
+                <CandleGlyph className="pointer-events-none absolute right-3 top-3 hidden h-16 w-11 text-gold opacity-30 lg:block" />
+                <p className="text-[0.65rem] uppercase tracking-[0.25em] text-gold">
+                  {t.candles.brand}
+                </p>
+                <h2 className="mt-2 font-display text-xl leading-snug text-night sm:text-3xl">
+                  {t.candles.question}
+                </h2>
+                <p className="mt-3 max-w-md text-sm leading-relaxed text-ink-soft sm:text-base">
+                  {t.candles.teaser}
+                </p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-night transition-colors group-hover:text-gold">
+                  {t.candles.more}
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </span>
+              </div>
+            </article>
+          </Link>
+        </div>
+      </section>
+
 
       {/* Bracelets teaser */}
       <section id="bracelets" className="scroll-mt-20 py-9 lg:py-14">

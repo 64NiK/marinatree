@@ -49,6 +49,7 @@ export default async function RootLayout({
     { href: `/${lang}#events`, label: t.nav.events },
     { href: `/${lang}#about`, label: t.nav.about },
     { href: `/${lang}#services`, label: t.nav.services },
+    { href: `/${lang}#candles`, label: t.nav.candles },
     { href: `/${lang}#bracelets`, label: t.nav.bracelets },
     { href: `/${lang}#contact`, label: t.nav.contact },
   ];
@@ -82,7 +83,7 @@ export default async function RootLayout({
                 <a
                   key={it.href}
                   href={it.href}
-                  className="hidden text-ink-soft transition-colors hover:text-ink md:block"
+                  className="hidden text-ink-soft transition-colors hover:text-ink lg:block"
                 >
                   {it.label}
                 </a>

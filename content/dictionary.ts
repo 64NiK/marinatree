@@ -11,7 +11,7 @@ export const dictionary = {
       description:
         "Pavadone skaņas, iekšējā līdzsvara un harmonijas pasaulē. Skaņu terapija ar Tibetas bļodām un gongu, transformācijas spēle LĪLA, sievišķie loki. Rīga, Latvija.",
     },
-    nav: { events: "Pasākumi", about: "Par mani", services: "Pakalpojumi", bracelets: "Rokassprādzes", contact: "Kontakti" },
+    nav: { events: "Pasākumi", about: "Par mani", services: "Pakalpojumi", candles: "Sveces", bracelets: "Rokassprādzes", contact: "Kontakti" },
     tagline: "Ground. Heal. Bloom.",
     hero: {
       kicker: "Marina Ķēniņa · Latvija",
@@ -96,6 +96,49 @@ export const dictionary = {
       waMessage: "Sveiki, Marina! Vēlos savu personīgo rokassprādzi.",
       back: "Uz sākumu",
     },
+    // Toast to Moments. Marinas teksts ir pārņemts burtiski; pārējais
+    // (pogas, virsraksti, meta) ir vietnes tehniskās virknes.
+    candles: {
+      brand: "Toast to Moments",
+      brandSub: "Handcrafted candles",
+      question: "Kuru mirkli Tu izvēlēsies sev?",
+      feelings: [
+        { label: "Mieru", slug: "inner-peace" },
+        { label: "Mīlestību pret sevi", slug: "self-love" },
+        { label: "Enerģiju", slug: "energy" },
+        { label: "Pārpilnību", slug: "abundance" },
+        { label: "Harmoniju", slug: "harmony" },
+        { label: "Spēku", slug: "strength" },
+        { label: "Pārliecību", slug: "confidence" },
+      ],
+      feelingsLast: "Vai varbūt — savu iekšējo gaismu?",
+      feelingsLastSlug: "inner-light",
+      notJust: "TOAST TO MOMENTS nav tikai aromātiska svece.",
+      made: "Katra svece ir radīta noteiktai sajūtai — ar īpaši piemeklētu aromātu, kristālu un mazu rituālu, kas aicina uz mirkli apstāties un pievērsties sev.",
+      pillars: ["Kristāls", "Aromāts", "Nodoms", "Mazais rituāls"],
+      closing1: "Izvēlies nevis sveci.",
+      closing2: "Izvēlies sajūtu, kas Tev šobrīd nepieciešama.",
+      brandLine: "Mirklis. Sajūta. Tikai Tev.",
+      teaser: "Rokām darinātas sveces ar dabīgiem kristāliem. Katra savai sajūtai.",
+      more: "Skatīt visas sveces",
+      collectionHeading: "Izvēlies savu mirkli",
+      collectionLead: "Piecpadsmit sveces, katra savai sajūtai.",
+      scentLabel: "Aromāts",
+      crystalLabel: "Kristāls",
+      orderHeading: "Kā pasūtīt",
+      orderIntro:
+        "Ja jūti, kura svece ir Tava, uzraksti man WhatsApp. Pastāstīšu par pieejamību un nogādāšu to Tev.",
+      order: [
+        "Ja esi tuvumā, ar prieku nodošu sveci personīgi.",
+        "Ja dzīvo tālāk, ar mīlestību nosūtīšu to pa pastu.",
+      ],
+      cta: "Pasūtīt sveci",
+      waMessage: "Sveiki, Marina! Mani interesē Toast to Moments sveces.",
+      back: "Uz sākumu",
+      metaTitle: "Toast to Moments · Meditācijas sveces",
+      metaDescription:
+        "Rokām darinātas meditācijas sveces ar dabīgiem kristāliem. Katra svece radīta noteiktai sajūtai, ar aromātu, kristālu un mazu rituālu.",
+    },
     footer: "Ar pateicību kļūšu par jūsu pavadoni skaņas, iekšējā līdzsvara un harmonijas pasaulē.",
   },
   ru: {
@@ -104,7 +147,7 @@ export const dictionary = {
       description:
         "Проводник в мир звука, внутреннего баланса и гармонии. Звукотерапия тибетскими чашами и гонгом, трансформационная игра ЛИЛА, женские круги. Рига, Латвия.",
     },
-    nav: { events: "Мероприятия", about: "Обо мне", services: "Услуги", bracelets: "Браслеты", contact: "Контакты" },
+    nav: { events: "Мероприятия", about: "Обо мне", services: "Услуги", candles: "Свечи", bracelets: "Браслеты", contact: "Контакты" },
     tagline: "Ground. Heal. Bloom.",
     hero: {
       kicker: "Марина Кенина · Латвия",
@@ -188,6 +231,49 @@ export const dictionary = {
       cta: "Заказать браслет",
       waMessage: "Здравствуйте, Марина! Хочу браслет под личный запрос.",
       back: "На главную",
+    },
+    // Toast to Moments. Текст Марины взят дословно; остальное
+    // (кнопки, заголовки, мета) это технические строки сайта.
+    candles: {
+      brand: "Toast to Moments",
+      brandSub: "Handcrafted candles",
+      question: "Какой момент Ты выберешь для себя?",
+      feelings: [
+        { label: "Спокойствие", slug: "inner-peace" },
+        { label: "Любовь к себе", slug: "self-love" },
+        { label: "Энергию", slug: "energy" },
+        { label: "Изобилие", slug: "abundance" },
+        { label: "Гармонию", slug: "harmony" },
+        { label: "Силу", slug: "strength" },
+        { label: "Уверенность", slug: "confidence" },
+      ],
+      feelingsLast: "А может быть — свой внутренний свет?",
+      feelingsLastSlug: "inner-light",
+      notJust: "TOAST TO MOMENTS — это не просто ароматическая свеча.",
+      made: "Каждая свеча создана для определённого состояния — с тщательно подобранным ароматом, кристаллом и маленьким ритуалом, который приглашает на мгновение остановиться и обратить внимание на себя.",
+      pillars: ["Кристалл", "Аромат", "Намерение", "Маленький ритуал"],
+      closing1: "Выбирай не свечу.",
+      closing2: "Выбирай ощущение, которое нужно тебе именно сейчас.",
+      brandLine: "Момент. Ощущение. Только для тебя.",
+      teaser: "Свечи ручной работы с натуральными кристаллами. Каждая для своего состояния.",
+      more: "Посмотреть все свечи",
+      collectionHeading: "Выбери свой момент",
+      collectionLead: "Пятнадцать свечей, каждая для своего состояния.",
+      scentLabel: "Аромат",
+      crystalLabel: "Кристалл",
+      orderHeading: "Как заказать",
+      orderIntro:
+        "Если чувствуете, какая свеча Ваша, напишите мне в WhatsApp. Расскажу о наличии и передам её Вам.",
+      order: [
+        "Если Вы рядом, с радостью передам свечу лично.",
+        "Если Вы находитесь далеко, с любовью отправлю её почтой.",
+      ],
+      cta: "Заказать свечу",
+      waMessage: "Здравствуйте, Марина! Меня интересуют свечи Toast to Moments.",
+      back: "На главную",
+      metaTitle: "Toast to Moments · Свечи для медитации",
+      metaDescription:
+        "Свечи ручной работы с натуральными кристаллами. Каждая свеча создана для определённого состояния: аромат, кристалл и маленький ритуал.",
     },
     footer: "С благодарностью стану вашим проводником в мир звука, внутреннего баланса и гармонии.",
   },

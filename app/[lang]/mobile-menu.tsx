@@ -4,13 +4,14 @@ import { useState } from "react";
 
 type NavItem = { href: string; label: string };
 
-// Phone-only slide-down menu. The desktop nav links are hidden < sm,
-// so this is how a phone visitor reaches the sections.
+// Phone/tablet slide-down menu. The inline nav links only appear from lg up
+// (six items in Latvian overflow a tablet), so this is how everyone narrower
+// reaches the sections.
 export function MobileMenu({ items }: { items: NavItem[] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         type="button"
         aria-label="Menu"

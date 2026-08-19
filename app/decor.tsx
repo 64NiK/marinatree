@@ -106,3 +106,63 @@ export const Waves = ({ className, ...props }: SvgProps) => (
     ))}
   </svg>
 );
+
+// ── Candle line (Toast to Moments) ────────────────────────────────────────
+// The four things every candle carries (crystal, aroma, intention, ritual),
+// plus a lit candle used as the section mark.
+
+// Lit candle in a glass, matching the TTM product shape.
+export const CandleGlyph = ({ className, ...props }: SvgProps) => (
+  <svg viewBox="0 0 32 44" fill="none" className={className} aria-hidden {...props}>
+    <g stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 4c3.2 3.3 4.6 5.6 4.6 7.7a4.6 4.6 0 11-9.2 0C11.4 9.6 12.8 7.3 16 4Z" />
+      <path d="M16 17v3.4" />
+      <path d="M8.5 20.4h15l-1.2 18a2.4 2.4 0 01-2.4 2.2h-7.8a2.4 2.4 0 01-2.4-2.2Z" />
+      <path d="M9.1 29.6h13.8" opacity="0.55" />
+    </g>
+  </svg>
+);
+
+// Faceted crystal.
+export const CrystalGlyph = ({ className, ...props }: SvgProps) => (
+  <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden {...props}>
+    <g stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" strokeLinecap="round">
+      <path d="M16 3 6 13l10 16 10-16Z" />
+      <path d="M6 13h20" />
+      <path d="M16 3v26" opacity="0.5" />
+    </g>
+  </svg>
+);
+
+// A sprig of two leaves: the aroma mark.
+export const AromaGlyph = ({ className, ...props }: SvgProps) => (
+  <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden {...props}>
+    <g stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 29V12" />
+      <path transform="translate(16 18) rotate(-32)" d={LEAF} />
+      <path transform="translate(16 24) rotate(32)" d={LEAF} />
+    </g>
+  </svg>
+);
+
+// Open heart: the intention mark.
+export const IntentionGlyph = ({ className, ...props }: SvgProps) => (
+  <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden {...props}>
+    <path
+      d="M16 27S4 20 4 12.4A6.4 6.4 0 0116 9a6.4 6.4 0 0112 3.4C28 20 16 27 16 27Z"
+      stroke="currentColor"
+      strokeWidth="1.2"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+// Four-point sparkle: the small-ritual mark.
+export const RitualGlyph = ({ className, ...props }: SvgProps) => (
+  <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden {...props}>
+    <g stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 4c1.4 7 3.6 9.2 10.6 10.6C19.6 16 17.4 18.2 16 25.2 14.6 18.2 12.4 16 5.4 14.6 12.4 13.2 14.6 11 16 4Z" />
+      <path d="M25.5 22.5c.5 2.4 1.2 3.1 3.6 3.6-2.4.5-3.1 1.2-3.6 3.6-.5-2.4-1.2-3.1-3.6-3.6 2.4-.5 3.1-1.2 3.6-3.6Z" opacity="0.6" />
+    </g>
+  </svg>
+);
